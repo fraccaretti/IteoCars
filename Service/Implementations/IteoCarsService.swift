@@ -33,7 +33,7 @@ class IteoCarsService: CarsService {
     }
     
     func uploadCar(_ car: Car, completion: @escaping () -> Void, onError: @escaping (Error) -> Void) {
-        guard let jsonData = serializer.serialize(car) else {
+        guard let jsonData = serializer.serialize(car, ignoreId: true) else {
             onError(CarServiceError.invalidDataFormat)
             return
         }

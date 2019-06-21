@@ -25,10 +25,10 @@ class AlamofireNetworking: Networking {
                             completion?(data)
                         }
                     default:
-                        guard let error = dataResponse.error else {
-                            onError(NetworkingError.dataRequestFailedWithCode(code: response.statusCode))
-                            return
-                        }
+                        onError(NetworkingError.dataRequestFailedWithCode(response.statusCode))
+                    }
+                } else {
+                    if let error = dataResponse.error {
                         onError(error)
                     }
                 }
@@ -45,7 +45,10 @@ class AlamofireNetworking: Networking {
                 switch response.statusCode {
                 case 200..<300: completion()
                 default:
-                    guard let error = dataResponse.error else { return }
+                    onError(NetworkingError.uploadRequestFailedWithCode(response.statusCode))
+                }
+            } else {
+                if let error = dataResponse.error {
                     onError(error)
                 }
             }

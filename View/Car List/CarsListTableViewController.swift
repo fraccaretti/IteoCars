@@ -5,13 +5,14 @@ class CarsListTableViewController: UIViewController {
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var errorMessageLabel: UILabel!
     @IBOutlet weak var loadingIndicator: UIActivityIndicatorView!
+    @IBOutlet weak var refreshButton: UIButton!
     
     var router: CarsListRouting?
     var viewModel: CarsListTableViewModel?
     
     private let reusableCellIdentifier: String = "CarsListTableViewCell"
-    let addNewCarSegueIdentifier: String = "carsListToCarDetailsSegue"
-    let carDetailsSegueIdentifier: String = "carsListToAddNewSegue"
+    let addNewCarSegueIdentifier: String = "carsListToAddNewSegue"
+    let carDetailsSegueIdentifier: String = "carsListToCarDetailsSegue"
 
     required init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
@@ -29,6 +30,11 @@ class CarsListTableViewController: UIViewController {
     
     @IBAction func onAddNewButtonTapped(_ sender: UIButton) {
         router?.routeToAddNewCar()
+    }
+    
+    @IBAction func onRefreshButtonTapped(_ sender: UIButton) {
+        hideErrorMessageLabel()
+        viewModel?.refreshButtonTapped()
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
@@ -65,11 +71,15 @@ class CarsListTableViewController: UIViewController {
     }
     
     private func showErrorMessageLabel(withMessage message: String) {
-        errorMessageLabel.text = message
+        tableView.isHidden = true
+        refreshButton.isHidden = false
+        errorMessageLabel.text = "Cannot load cars list \n" + message
         errorMessageLabel.isHidden = false
     }
     
     private func hideErrorMessageLabel() {
+        tableView.isHidden = false
+        refreshButton.isHidden = true
         errorMessageLabel.text?.removeAll()
         errorMessageLabel.isHidden = true
     }

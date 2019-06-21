@@ -34,7 +34,7 @@ class CarMapper {
     }
     
     private func map(codableData: CodableCar) -> Car {
-        return Car(id: codableData.id,
+        return Car(id: codableData.id ?? UUID().uuidString,
                    name: codableData.name,
                    model: codableData.model,
                    brand: codableData.brand,

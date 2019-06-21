@@ -1,9 +1,13 @@
-//
-//  UtilsAssembly.swift
-//  Cars
-//
-//  Created by Proget on 19.06.2019.
-//  Copyright © 2019 Piotr Fraccaro. All rights reserved.
-//
-
 import Foundation
+import Swinject
+
+class UtilsAssembly: Assembly {
+    func assemble(container: Container) {
+        container.register(JSONDecoder.self) { _ in
+            return JSONDecoder()
+        }.inObjectScope(.container)
+        container.register(JSONEncoder.self) { _ in
+            return JSONEncoder()
+        }.inObjectScope(.container)
+    }
+}

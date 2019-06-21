@@ -1,7 +1,7 @@
 import Foundation
 import RealmSwift
 
-class RealmUnsentCarsRepository: CarsRepository {
+class RealmUnsentCarsRepository: UnsentCarsRepository {
     private let realm: Realm
     private let mapper: CarMapper
     

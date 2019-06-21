@@ -26,7 +26,7 @@ class ViewControllersAssembly: Assembly {
         container.register(CarAddingFormViewModel.self) { resolver -> CarAddingFormViewModel in
             return CarAddingFormViewModelForService(reachability: resolver.resolve(Reachability.self)!,
                                                     carsService: resolver.resolve(CarsService.self)!,
-                                                    repository: resolver.resolve(CarsRepository.self)!)
+                                                    repository: resolver.resolve(UnsentCarsRepository.self)!)
         }
         container.storyboardInitCompleted(CarAddingFormViewController.self) { resolver, controller in
             controller.viewModel = resolver.resolve(CarAddingFormViewModel.self)!

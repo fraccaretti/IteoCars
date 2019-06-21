@@ -1,9 +1,16 @@
-//
-//  AppDelegateExtensions.swift
-//  Cars
-//
-//  Created by Proget on 19.06.2019.
-//  Copyright © 2019 Piotr Fraccaro. All rights reserved.
-//
-
 import Foundation
+
+extension AppDelegate {
+    func sendAllUnsentCars() {
+        let repository = assembler.resolver.resolve(UnsentCarsRepository.self)!
+        let service = assembler.resolver.resolve(CarsService.self)!
+        
+        let cars = repository.getAll()
+        for car in cars {
+            service.uploadCar(car, completion: {
+                try? repository.delete(car.id)
+            }) { _ in
+            }
+        }
+    }
+}

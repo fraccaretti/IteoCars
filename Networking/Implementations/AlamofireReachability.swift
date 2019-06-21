@@ -18,6 +18,10 @@ class AlamofireReachability: Reachability {
         observers.append(observer)
     }
     
+    func removeObserver(_ observer: ReachabilityObserver) {
+        
+    }
+    
     func notifyObservers(withStatus status: ReachabilityStatus) {
         for observer in observers {
             observer.reachabilityStatusChanged(status: status)
@@ -25,8 +29,8 @@ class AlamofireReachability: Reachability {
     }
     
     private func listenForReachabilityChanges() {
-        reachabilityManager.listener = { status in
-            self.reachabilityStatusChanged(status)
+        reachabilityManager.listener = { [weak self] status in
+            self?.reachabilityStatusChanged(status)
         }
     }
     

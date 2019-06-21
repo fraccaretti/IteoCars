@@ -1,13 +1,13 @@
 import Foundation
 
 class CodableCar: Codable {
-    let id: String
+    var id: String?
     let name: String
     let model: String
     let brand: String
     let year: String
     
-    init(id: String,
+    init(id: String?,
          name: String,
          model: String,
          brand: String,

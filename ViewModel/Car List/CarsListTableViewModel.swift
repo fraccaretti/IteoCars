@@ -9,4 +9,5 @@ protocol CarsListTableViewModel {
     var selectedCar: Car? { get set }
     
     func attach(carsList: CarsList)
+    func refreshButtonTapped()
 }

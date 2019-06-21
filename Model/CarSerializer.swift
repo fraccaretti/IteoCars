@@ -13,9 +13,10 @@ class CarSerializer {
         self.mapper = mapper
     }
     
-    func serialize(_ car: Car) -> Data? {
+    func serialize(_ car: Car, ignoreId: Bool) -> Data? {
         do {
             let codableObject: CodableCar = mapper.map(car)
+            if ignoreId { codableObject.id = nil }
             return try jsonEncoder.encode(codableObject)
         } catch {
             return nil

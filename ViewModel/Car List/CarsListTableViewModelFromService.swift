@@ -24,6 +24,7 @@ class CarsListTableViewModelFromService: CarsListTableViewModel {
         self.cellViewModels = Observable(with: cellViewModelsList)
         
         reachability.addObserver(self)
+        populateCarsList()
     }
     
     func attach(carsList: CarsList) {
@@ -31,6 +32,10 @@ class CarsListTableViewModelFromService: CarsListTableViewModel {
             return CarsListCellViewModelFromCar(with: car)
         }
         self.cellViewModels = Observable(with: cellViewModelsList)
+    }
+    
+    func refreshButtonTapped() {
+        populateCarsList()
     }
     
     private func populateCarsList() {

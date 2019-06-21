@@ -2,6 +2,8 @@ import Foundation
 
 class CarDetailsViewModelFromCar: CarDetailsViewModel {
     
+    let controllerTitle: String = "Car Details"
+    
     private(set) var car: Observable<Car>?
     
     var name: String {

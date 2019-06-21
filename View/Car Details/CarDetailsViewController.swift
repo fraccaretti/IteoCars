@@ -18,6 +18,8 @@ class CarDetailsViewController: UIViewController {
     private func loadViewModel() {
         guard isViewLoaded, let viewModel = viewModel else { return }
         
+        title = viewModel.controllerTitle
+        
         viewModel.car?.valueChanged = { [weak self] _ in
             self?.nameLabel.text = viewModel.name
             self?.modelLabel.text = viewModel.model

@@ -1,9 +1,11 @@
-//
-//  CarAddingFormBrokenRule.swift
-//  Cars
-//
-//  Created by Proget on 19.06.2019.
-//  Copyright © 2019 Piotr Fraccaro. All rights reserved.
-//
-
 import Foundation
+
+struct CarAddingFormBrokenRule {
+    let propertyName: String
+    let message: String
+    
+    init(propertyName: String, message: String) {
+        self.propertyName = propertyName
+        self.message = message
+    }
+}

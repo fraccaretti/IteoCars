@@ -12,8 +12,8 @@ class ModelAssembly: Assembly {
                                  jsonDecoder: resolver.resolve(JSONDecoder.self)!,
                                  mapper: resolver.resolve(CarMapper.self)!)
         }
-        container.register(CarsRepository.self) { resolver -> CarsRepository in
-            return RealmCarsRepository(realm: resolver.resolve(Realm.self)!,
+        container.register(UnsentCarsRepository.self) { resolver -> UnsentCarsRepository in
+            return RealmUnsentCarsRepository(realm: resolver.resolve(Realm.self)!,
                                        mapper: resolver.resolve(CarMapper.self)!)
         }
     }

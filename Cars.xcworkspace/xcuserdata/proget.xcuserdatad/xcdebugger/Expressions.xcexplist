@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<VariablesViewState
+   version = "1.0">
+   <ContextStates>
+      <ContextState
+         contextName = "closure #1 in AlamofireNetworking.performDataRequest(_:completion:onError:):AlamofireNetworking.swift">
+         <PersistentStrings>
+            <PersistentString
+               value = "response.statusCode">
+            </PersistentString>
+         </PersistentStrings>
+      </ContextState>
+   </ContextStates>
+</VariablesViewState>

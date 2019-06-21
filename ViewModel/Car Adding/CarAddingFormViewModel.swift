@@ -1,10 +1,15 @@
 import Foundation
 
 protocol CarAddingFormViewModel {
-    var name: String { get }
-    var model: String { get }
-    var brand: String { get }
-    var year: String { get }
+    var controllerTitle: String { get }
+    
+    var name: String { get set }
+    var model: String { get set }
+    var brand: String { get set }
+    var year: String { get set }
+    
+    var brokenRules: [CarAddingFormBrokenRule] { get }
+    var isValid: Bool { get }
     
     func addNewButtonTapped()
 }
