@@ -7,21 +7,119 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7085A1B322B8DCB3009BD2BE /* CarDetailsViewModelFromCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085A1B222B8DCB3009BD2BE /* CarDetailsViewModelFromCar.swift */; };
+		7085A1B522B90490009BD2BE /* CarAddingFormViewModelForService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085A1B422B90490009BD2BE /* CarAddingFormViewModelForService.swift */; };
+		7085A1BA22B906ED009BD2BE /* ViewControllersAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085A1B922B906ED009BD2BE /* ViewControllersAssembly.swift */; };
+		7085A1C122B91400009BD2BE /* RealmCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085A1C022B91400009BD2BE /* RealmCar.swift */; };
+		7085A1C322B91425009BD2BE /* RealmCarsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085A1C222B91425009BD2BE /* RealmCarsRepository.swift */; };
+		7085A1C522B948CA009BD2BE /* CarsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085A1C422B948CA009BD2BE /* CarsRepository.swift */; };
+		7085A1C822B96969009BD2BE /* RealmError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085A1C722B96969009BD2BE /* RealmError.swift */; };
+		7085A1CA22B969F8009BD2BE /* ModelAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085A1C922B969F8009BD2BE /* ModelAssembly.swift */; };
+		7085A1CD22B96E2A009BD2BE /* StringExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085A1CC22B96E2A009BD2BE /* StringExtensions.swift */; };
+		7085A1CF22BA0B2C009BD2BE /* RealmAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085A1CE22BA0B2C009BD2BE /* RealmAssembly.swift */; };
+		7085A1D122BA0BEF009BD2BE /* RealmConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7085A1D022BA0BEF009BD2BE /* RealmConfiguration.swift */; };
 		70D422C622B633440057D2EE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D422C522B633440057D2EE /* AppDelegate.swift */; };
-		70D422C822B633440057D2EE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D422C722B633440057D2EE /* ViewController.swift */; };
 		70D422CB22B633440057D2EE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D422C922B633440057D2EE /* Main.storyboard */; };
 		70D422CD22B633490057D2EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 70D422CC22B633490057D2EE /* Assets.xcassets */; };
 		70D422D022B633490057D2EE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 70D422CE22B633490057D2EE /* LaunchScreen.storyboard */; };
+		70D422DA22B6364D0057D2EE /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D422D922B6364D0057D2EE /* Car.swift */; };
+		70D422DC22B637150057D2EE /* CodableCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D422DB22B637150057D2EE /* CodableCar.swift */; };
+		70D422DE22B637DA0057D2EE /* CodableCarsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D422DD22B637DA0057D2EE /* CodableCarsList.swift */; };
+		70D422E022B638060057D2EE /* CarMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D422DF22B638060057D2EE /* CarMapper.swift */; };
+		70D422E222B638FC0057D2EE /* CarsList.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D422E122B638FC0057D2EE /* CarsList.swift */; };
+		70D422E622B63B5A0057D2EE /* CarsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D422E522B63B5A0057D2EE /* CarsListTableViewController.swift */; };
+		70D422E822B63BC30057D2EE /* CarDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D422E722B63BC30057D2EE /* CarDetailsViewController.swift */; };
+		70D422EA22B63DF30057D2EE /* CarsListTableViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D422E922B63DF30057D2EE /* CarsListTableViewModel.swift */; };
+		70D422EC22B650040057D2EE /* CarsListCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D422EB22B650040057D2EE /* CarsListCellViewModel.swift */; };
+		70D422EE22B651390057D2EE /* CarsListTableViewModelFromService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D422ED22B651390057D2EE /* CarsListTableViewModelFromService.swift */; };
+		70D422F022B6545A0057D2EE /* CarsListTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D422EF22B6545A0057D2EE /* CarsListTableViewCell.swift */; };
+		70D422F322B654870057D2EE /* CarAddingFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D422F222B654870057D2EE /* CarAddingFormViewController.swift */; };
+		70D422F722B65B990057D2EE /* CarsListCellViewModelFromCar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D422F622B65B990057D2EE /* CarsListCellViewModelFromCar.swift */; };
+		70D422F922B65DA60057D2EE /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D422F822B65DA60057D2EE /* Observable.swift */; };
+		70D4230022B66D560057D2EE /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D422FF22B66D560057D2EE /* Response.swift */; };
+		70D4230622B671680057D2EE /* IteoCarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4230522B671680057D2EE /* IteoCarsService.swift */; };
+		70D4230822B671870057D2EE /* IteoHeaders.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4230722B671870057D2EE /* IteoHeaders.swift */; };
+		70D4230A22B6721A0057D2EE /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4230922B6721A0057D2EE /* Networking.swift */; };
+		70D4230C22B67FE90057D2EE /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4230B22B67FE90057D2EE /* Request.swift */; };
+		70D4230E22B7AA850057D2EE /* AlamofireNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4230D22B7AA850057D2EE /* AlamofireNetworking.swift */; };
+		70D4231022B7AABF0057D2EE /* AlamofireNetworkingAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4230F22B7AABF0057D2EE /* AlamofireNetworkingAssembly.swift */; };
+		70D4231422B7BB450057D2EE /* CarsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4231322B7BB450057D2EE /* CarsService.swift */; };
+		70D4231622B7BF980057D2EE /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4231522B7BF980057D2EE /* Reachability.swift */; };
+		70D4231A22B7C1AE0057D2EE /* ReachabilityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4231922B7C1AE0057D2EE /* ReachabilityObserver.swift */; };
+		70D4231C22B7C22A0057D2EE /* ReachabilityStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4231B22B7C22A0057D2EE /* ReachabilityStatus.swift */; };
+		70D4231E22B7C2670057D2EE /* AlamofireReachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4231D22B7C2670057D2EE /* AlamofireReachability.swift */; };
+		70D4232022B7C2A80057D2EE /* AlamofireReachabilityStatusMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4231F22B7C2A80057D2EE /* AlamofireReachabilityStatusMapper.swift */; };
+		70D4232322B7CE990057D2EE /* NetworkingError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4232222B7CE990057D2EE /* NetworkingError.swift */; };
+		70D4232522B7DCEE0057D2EE /* CarServiceError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4232422B7DCEE0057D2EE /* CarServiceError.swift */; };
+		70D4232922B7DD880057D2EE /* IteoCarsServiceEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4232822B7DD880057D2EE /* IteoCarsServiceEndpoints.swift */; };
+		70D4232B22B7DFD90057D2EE /* IteoCarsServiceAssembly.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4232A22B7DFD90057D2EE /* IteoCarsServiceAssembly.swift */; };
+		70D4232D22B7E3A40057D2EE /* CarSerializer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4232C22B7E3A40057D2EE /* CarSerializer.swift */; };
+		70D4233122B8A1340057D2EE /* CarDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4233022B8A1340057D2EE /* CarDetailsViewModel.swift */; };
+		70D4233322B8A13F0057D2EE /* CarAddingFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4233222B8A13F0057D2EE /* CarAddingFormViewModel.swift */; };
+		70D4233622B8BDB70057D2EE /* CarsListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4233522B8BDB70057D2EE /* CarsListRouter.swift */; };
+		70D4233822B8BE630057D2EE /* CarsListRouting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70D4233722B8BE630057D2EE /* CarsListRouting.swift */; };
+		70D4233C22B8CC680057D2EE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 70D4233B22B8CC680057D2EE /* Default-568h@2x.png */; };
+		C8E62A9B3044F9B382EEC367 /* Pods_Cars.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C84FE2001C81AA40C858E039 /* Pods_Cars.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7085A1B222B8DCB3009BD2BE /* CarDetailsViewModelFromCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewModelFromCar.swift; sourceTree = "<group>"; };
+		7085A1B422B90490009BD2BE /* CarAddingFormViewModelForService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAddingFormViewModelForService.swift; sourceTree = "<group>"; };
+		7085A1B922B906ED009BD2BE /* ViewControllersAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllersAssembly.swift; sourceTree = "<group>"; };
+		7085A1C022B91400009BD2BE /* RealmCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCar.swift; sourceTree = "<group>"; };
+		7085A1C222B91425009BD2BE /* RealmCarsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmCarsRepository.swift; sourceTree = "<group>"; };
+		7085A1C422B948CA009BD2BE /* CarsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsRepository.swift; sourceTree = "<group>"; };
+		7085A1C722B96969009BD2BE /* RealmError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmError.swift; sourceTree = "<group>"; };
+		7085A1C922B969F8009BD2BE /* ModelAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelAssembly.swift; sourceTree = "<group>"; };
+		7085A1CC22B96E2A009BD2BE /* StringExtensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StringExtensions.swift; sourceTree = "<group>"; };
+		7085A1CE22BA0B2C009BD2BE /* RealmAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmAssembly.swift; sourceTree = "<group>"; };
+		7085A1D022BA0BEF009BD2BE /* RealmConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmConfiguration.swift; sourceTree = "<group>"; };
 		70D422C222B633440057D2EE /* Cars.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Cars.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		70D422C522B633440057D2EE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		70D422C722B633440057D2EE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		70D422CA22B633440057D2EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		70D422CC22B633490057D2EE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		70D422CF22B633490057D2EE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		70D422D122B633490057D2EE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		70D422D922B6364D0057D2EE /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
+		70D422DB22B637150057D2EE /* CodableCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableCar.swift; sourceTree = "<group>"; };
+		70D422DD22B637DA0057D2EE /* CodableCarsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CodableCarsList.swift; sourceTree = "<group>"; };
+		70D422DF22B638060057D2EE /* CarMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarMapper.swift; sourceTree = "<group>"; };
+		70D422E122B638FC0057D2EE /* CarsList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsList.swift; sourceTree = "<group>"; };
+		70D422E522B63B5A0057D2EE /* CarsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListTableViewController.swift; sourceTree = "<group>"; };
+		70D422E722B63BC30057D2EE /* CarDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewController.swift; sourceTree = "<group>"; };
+		70D422E922B63DF30057D2EE /* CarsListTableViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListTableViewModel.swift; sourceTree = "<group>"; };
+		70D422EB22B650040057D2EE /* CarsListCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListCellViewModel.swift; sourceTree = "<group>"; };
+		70D422ED22B651390057D2EE /* CarsListTableViewModelFromService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListTableViewModelFromService.swift; sourceTree = "<group>"; };
+		70D422EF22B6545A0057D2EE /* CarsListTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListTableViewCell.swift; sourceTree = "<group>"; };
+		70D422F222B654870057D2EE /* CarAddingFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAddingFormViewController.swift; sourceTree = "<group>"; };
+		70D422F622B65B990057D2EE /* CarsListCellViewModelFromCar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListCellViewModelFromCar.swift; sourceTree = "<group>"; };
+		70D422F822B65DA60057D2EE /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		70D422FF22B66D560057D2EE /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
+		70D4230522B671680057D2EE /* IteoCarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteoCarsService.swift; sourceTree = "<group>"; };
+		70D4230722B671870057D2EE /* IteoHeaders.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteoHeaders.swift; sourceTree = "<group>"; };
+		70D4230922B6721A0057D2EE /* Networking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Networking.swift; sourceTree = "<group>"; };
+		70D4230B22B67FE90057D2EE /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		70D4230D22B7AA850057D2EE /* AlamofireNetworking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworking.swift; sourceTree = "<group>"; };
+		70D4230F22B7AABF0057D2EE /* AlamofireNetworkingAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireNetworkingAssembly.swift; sourceTree = "<group>"; };
+		70D4231322B7BB450057D2EE /* CarsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsService.swift; sourceTree = "<group>"; };
+		70D4231522B7BF980057D2EE /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		70D4231922B7C1AE0057D2EE /* ReachabilityObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityObserver.swift; sourceTree = "<group>"; };
+		70D4231B22B7C22A0057D2EE /* ReachabilityStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReachabilityStatus.swift; sourceTree = "<group>"; };
+		70D4231D22B7C2670057D2EE /* AlamofireReachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireReachability.swift; sourceTree = "<group>"; };
+		70D4231F22B7C2A80057D2EE /* AlamofireReachabilityStatusMapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlamofireReachabilityStatusMapper.swift; sourceTree = "<group>"; };
+		70D4232222B7CE990057D2EE /* NetworkingError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingError.swift; sourceTree = "<group>"; };
+		70D4232422B7DCEE0057D2EE /* CarServiceError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarServiceError.swift; sourceTree = "<group>"; };
+		70D4232822B7DD880057D2EE /* IteoCarsServiceEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteoCarsServiceEndpoints.swift; sourceTree = "<group>"; };
+		70D4232A22B7DFD90057D2EE /* IteoCarsServiceAssembly.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IteoCarsServiceAssembly.swift; sourceTree = "<group>"; };
+		70D4232C22B7E3A40057D2EE /* CarSerializer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarSerializer.swift; sourceTree = "<group>"; };
+		70D4233022B8A1340057D2EE /* CarDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarDetailsViewModel.swift; sourceTree = "<group>"; };
+		70D4233222B8A13F0057D2EE /* CarAddingFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAddingFormViewModel.swift; sourceTree = "<group>"; };
+		70D4233522B8BDB70057D2EE /* CarsListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListRouter.swift; sourceTree = "<group>"; };
+		70D4233722B8BE630057D2EE /* CarsListRouting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListRouting.swift; sourceTree = "<group>"; };
+		70D4233B22B8CC680057D2EE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		86BB080D90A941E39676BB35 /* Pods-Cars.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cars.release.xcconfig"; path = "Target Support Files/Pods-Cars/Pods-Cars.release.xcconfig"; sourceTree = "<group>"; };
+		C84FE2001C81AA40C858E039 /* Pods_Cars.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Cars.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9B9CC8C72F89C15EC5EEA70 /* Pods-Cars.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Cars.debug.xcconfig"; path = "Target Support Files/Pods-Cars/Pods-Cars.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +127,68 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C8E62A9B3044F9B382EEC367 /* Pods_Cars.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1FE60F88A10D588317FAD9C7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E9B9CC8C72F89C15EC5EEA70 /* Pods-Cars.debug.xcconfig */,
+				86BB080D90A941E39676BB35 /* Pods-Cars.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		7085A1BD22B913E1009BD2BE /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				7085A1C022B91400009BD2BE /* RealmCar.swift */,
+				7085A1C222B91425009BD2BE /* RealmCarsRepository.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		7085A1C622B96925009BD2BE /* Realm */ = {
+			isa = PBXGroup;
+			children = (
+				7085A1CE22BA0B2C009BD2BE /* RealmAssembly.swift */,
+				7085A1D022BA0BEF009BD2BE /* RealmConfiguration.swift */,
+				7085A1C722B96969009BD2BE /* RealmError.swift */,
+			);
+			path = Realm;
+			sourceTree = "<group>";
+		};
+		7085A1CB22B96E19009BD2BE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				7085A1CC22B96E2A009BD2BE /* StringExtensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		70D422B922B633440057D2EE = {
 			isa = PBXGroup;
 			children = (
-				70D422C422B633440057D2EE /* Cars */,
+				70D4233B22B8CC680057D2EE /* Default-568h@2x.png */,
+				70D422C922B633440057D2EE /* Main.storyboard */,
+				70D422CC22B633490057D2EE /* Assets.xcassets */,
+				70D422CE22B633490057D2EE /* LaunchScreen.storyboard */,
+				70D422D122B633490057D2EE /* Info.plist */,
+				70D422D722B633570057D2EE /* AppDelegate */,
+				70D422D822B6363E0057D2EE /* Model */,
+				70D422E322B63AA70057D2EE /* View */,
+				70D422E422B63ABB0057D2EE /* ViewModel */,
+				70D422FE22B66D480057D2EE /* Networking */,
+				70D4232122B7C55B0057D2EE /* Service */,
+				7085A1C622B96925009BD2BE /* Realm */,
+				7085A1CB22B96E19009BD2BE /* Extensions */,
 				70D422C322B633440057D2EE /* Products */,
+				1FE60F88A10D588317FAD9C7 /* Pods */,
+				861DB66FDE680EAE6C65D3F1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,17 +200,201 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		70D422C422B633440057D2EE /* Cars */ = {
+		70D422D722B633570057D2EE /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
 				70D422C522B633440057D2EE /* AppDelegate.swift */,
-				70D422C722B633440057D2EE /* ViewController.swift */,
-				70D422C922B633440057D2EE /* Main.storyboard */,
-				70D422CC22B633490057D2EE /* Assets.xcassets */,
-				70D422CE22B633490057D2EE /* LaunchScreen.storyboard */,
-				70D422D122B633490057D2EE /* Info.plist */,
 			);
-			path = Cars;
+			path = AppDelegate;
+			sourceTree = "<group>";
+		};
+		70D422D822B6363E0057D2EE /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				7085A1C922B969F8009BD2BE /* ModelAssembly.swift */,
+				70D422DF22B638060057D2EE /* CarMapper.swift */,
+				70D4232C22B7E3A40057D2EE /* CarSerializer.swift */,
+				7085A1C422B948CA009BD2BE /* CarsRepository.swift */,
+				7085A1BD22B913E1009BD2BE /* Realm */,
+				70D4232F22B8A10E0057D2EE /* Data */,
+				70D4232E22B8A1020057D2EE /* Domain */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		70D422E322B63AA70057D2EE /* View */ = {
+			isa = PBXGroup;
+			children = (
+				7085A1B922B906ED009BD2BE /* ViewControllersAssembly.swift */,
+				70D422F122B654630057D2EE /* Car List */,
+				70D422F422B654920057D2EE /* Car Details */,
+				70D422F522B6549B0057D2EE /* Car Adding */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		70D422E422B63ABB0057D2EE /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				70D422FA22B65F080057D2EE /* Binding Utils */,
+				70D422FB22B66B650057D2EE /* Car List */,
+				70D422FC22B66B9B0057D2EE /* Car Details */,
+				70D422FD22B66C9E0057D2EE /* Car Adding */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		70D422F122B654630057D2EE /* Car List */ = {
+			isa = PBXGroup;
+			children = (
+				70D422E522B63B5A0057D2EE /* CarsListTableViewController.swift */,
+				70D422EF22B6545A0057D2EE /* CarsListTableViewCell.swift */,
+				70D4233522B8BDB70057D2EE /* CarsListRouter.swift */,
+				70D4233722B8BE630057D2EE /* CarsListRouting.swift */,
+			);
+			path = "Car List";
+			sourceTree = "<group>";
+		};
+		70D422F422B654920057D2EE /* Car Details */ = {
+			isa = PBXGroup;
+			children = (
+				70D422E722B63BC30057D2EE /* CarDetailsViewController.swift */,
+			);
+			path = "Car Details";
+			sourceTree = "<group>";
+		};
+		70D422F522B6549B0057D2EE /* Car Adding */ = {
+			isa = PBXGroup;
+			children = (
+				70D422F222B654870057D2EE /* CarAddingFormViewController.swift */,
+			);
+			path = "Car Adding";
+			sourceTree = "<group>";
+		};
+		70D422FA22B65F080057D2EE /* Binding Utils */ = {
+			isa = PBXGroup;
+			children = (
+				70D422F822B65DA60057D2EE /* Observable.swift */,
+			);
+			path = "Binding Utils";
+			sourceTree = "<group>";
+		};
+		70D422FB22B66B650057D2EE /* Car List */ = {
+			isa = PBXGroup;
+			children = (
+				70D422E922B63DF30057D2EE /* CarsListTableViewModel.swift */,
+				70D422EB22B650040057D2EE /* CarsListCellViewModel.swift */,
+				70D422ED22B651390057D2EE /* CarsListTableViewModelFromService.swift */,
+				70D422F622B65B990057D2EE /* CarsListCellViewModelFromCar.swift */,
+			);
+			path = "Car List";
+			sourceTree = "<group>";
+		};
+		70D422FC22B66B9B0057D2EE /* Car Details */ = {
+			isa = PBXGroup;
+			children = (
+				70D4233022B8A1340057D2EE /* CarDetailsViewModel.swift */,
+				7085A1B222B8DCB3009BD2BE /* CarDetailsViewModelFromCar.swift */,
+			);
+			path = "Car Details";
+			sourceTree = "<group>";
+		};
+		70D422FD22B66C9E0057D2EE /* Car Adding */ = {
+			isa = PBXGroup;
+			children = (
+				70D4233222B8A13F0057D2EE /* CarAddingFormViewModel.swift */,
+				7085A1B422B90490009BD2BE /* CarAddingFormViewModelForService.swift */,
+			);
+			path = "Car Adding";
+			sourceTree = "<group>";
+		};
+		70D422FE22B66D480057D2EE /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				70D4231222B7BAF90057D2EE /* Protocols */,
+				70D4231122B7BAF20057D2EE /* Implementations */,
+				70D4230B22B67FE90057D2EE /* Request.swift */,
+				70D422FF22B66D560057D2EE /* Response.swift */,
+				70D4231B22B7C22A0057D2EE /* ReachabilityStatus.swift */,
+				70D4232222B7CE990057D2EE /* NetworkingError.swift */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		70D4231122B7BAF20057D2EE /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				70D4230F22B7AABF0057D2EE /* AlamofireNetworkingAssembly.swift */,
+				70D4231F22B7C2A80057D2EE /* AlamofireReachabilityStatusMapper.swift */,
+				70D4230D22B7AA850057D2EE /* AlamofireNetworking.swift */,
+				70D4231D22B7C2670057D2EE /* AlamofireReachability.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		70D4231222B7BAF90057D2EE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				70D4230922B6721A0057D2EE /* Networking.swift */,
+				70D4231522B7BF980057D2EE /* Reachability.swift */,
+				70D4231922B7C1AE0057D2EE /* ReachabilityObserver.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		70D4232122B7C55B0057D2EE /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				70D4232622B7DCF70057D2EE /* Protocols */,
+				70D4232722B7DCFE0057D2EE /* Implementations */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		70D4232622B7DCF70057D2EE /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				70D4231322B7BB450057D2EE /* CarsService.swift */,
+				70D4232422B7DCEE0057D2EE /* CarServiceError.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		70D4232722B7DCFE0057D2EE /* Implementations */ = {
+			isa = PBXGroup;
+			children = (
+				70D4232A22B7DFD90057D2EE /* IteoCarsServiceAssembly.swift */,
+				70D4230522B671680057D2EE /* IteoCarsService.swift */,
+				70D4232822B7DD880057D2EE /* IteoCarsServiceEndpoints.swift */,
+				70D4230722B671870057D2EE /* IteoHeaders.swift */,
+			);
+			path = Implementations;
+			sourceTree = "<group>";
+		};
+		70D4232E22B8A1020057D2EE /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				70D422D922B6364D0057D2EE /* Car.swift */,
+				70D422E122B638FC0057D2EE /* CarsList.swift */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		70D4232F22B8A10E0057D2EE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				70D422DB22B637150057D2EE /* CodableCar.swift */,
+				70D422DD22B637DA0057D2EE /* CodableCarsList.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		861DB66FDE680EAE6C65D3F1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C84FE2001C81AA40C858E039 /* Pods_Cars.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +404,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 70D422D422B633490057D2EE /* Build configuration list for PBXNativeTarget "Cars" */;
 			buildPhases = (
+				D96092AE508BF49B69810569 /* [CP] Check Pods Manifest.lock */,
 				70D422BE22B633440057D2EE /* Sources */,
 				70D422BF22B633440057D2EE /* Frameworks */,
 				70D422C022B633440057D2EE /* Resources */,
+				1158ABAF8CD017707A4F4816 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +458,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				70D422D022B633490057D2EE /* LaunchScreen.storyboard in Resources */,
+				70D4233C22B8CC680057D2EE /* Default-568h@2x.png in Resources */,
 				70D422CD22B633490057D2EE /* Assets.xcassets in Resources */,
 				70D422CB22B633440057D2EE /* Main.storyboard in Resources */,
 			);
@@ -130,13 +466,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		1158ABAF8CD017707A4F4816 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Cars/Pods-Cars-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Realm/Realm.framework",
+				"${BUILT_PRODUCTS_DIR}/RealmSwift/RealmSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/Swinject/Swinject.framework",
+				"${BUILT_PRODUCTS_DIR}/SwinjectStoryboard/SwinjectStoryboard.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Realm.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RealmSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Swinject.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwinjectStoryboard.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Cars/Pods-Cars-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D96092AE508BF49B69810569 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Cars-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		70D422BE22B633440057D2EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				70D422C822B633440057D2EE /* ViewController.swift in Sources */,
+				7085A1C822B96969009BD2BE /* RealmError.swift in Sources */,
+				7085A1BA22B906ED009BD2BE /* ViewControllersAssembly.swift in Sources */,
+				7085A1D122BA0BEF009BD2BE /* RealmConfiguration.swift in Sources */,
+				70D4230822B671870057D2EE /* IteoHeaders.swift in Sources */,
+				7085A1C322B91425009BD2BE /* RealmCarsRepository.swift in Sources */,
+				70D422F922B65DA60057D2EE /* Observable.swift in Sources */,
+				70D4232522B7DCEE0057D2EE /* CarServiceError.swift in Sources */,
+				70D4231A22B7C1AE0057D2EE /* ReachabilityObserver.swift in Sources */,
+				70D4233322B8A13F0057D2EE /* CarAddingFormViewModel.swift in Sources */,
+				70D422EC22B650040057D2EE /* CarsListCellViewModel.swift in Sources */,
+				70D4232322B7CE990057D2EE /* NetworkingError.swift in Sources */,
+				70D422EE22B651390057D2EE /* CarsListTableViewModelFromService.swift in Sources */,
+				70D4230622B671680057D2EE /* IteoCarsService.swift in Sources */,
+				70D4230A22B6721A0057D2EE /* Networking.swift in Sources */,
+				70D4232B22B7DFD90057D2EE /* IteoCarsServiceAssembly.swift in Sources */,
+				70D4230022B66D560057D2EE /* Response.swift in Sources */,
+				70D422EA22B63DF30057D2EE /* CarsListTableViewModel.swift in Sources */,
+				7085A1C122B91400009BD2BE /* RealmCar.swift in Sources */,
+				7085A1B522B90490009BD2BE /* CarAddingFormViewModelForService.swift in Sources */,
+				70D422F322B654870057D2EE /* CarAddingFormViewController.swift in Sources */,
+				70D422E022B638060057D2EE /* CarMapper.swift in Sources */,
+				70D4233122B8A1340057D2EE /* CarDetailsViewModel.swift in Sources */,
+				70D4233822B8BE630057D2EE /* CarsListRouting.swift in Sources */,
+				70D4231422B7BB450057D2EE /* CarsService.swift in Sources */,
+				7085A1CD22B96E2A009BD2BE /* StringExtensions.swift in Sources */,
+				70D422E822B63BC30057D2EE /* CarDetailsViewController.swift in Sources */,
+				7085A1C522B948CA009BD2BE /* CarsRepository.swift in Sources */,
+				70D4231C22B7C22A0057D2EE /* ReachabilityStatus.swift in Sources */,
+				70D422F722B65B990057D2EE /* CarsListCellViewModelFromCar.swift in Sources */,
 				70D422C622B633440057D2EE /* AppDelegate.swift in Sources */,
+				70D4230C22B67FE90057D2EE /* Request.swift in Sources */,
+				70D422DA22B6364D0057D2EE /* Car.swift in Sources */,
+				70D422E222B638FC0057D2EE /* CarsList.swift in Sources */,
+				70D422DE22B637DA0057D2EE /* CodableCarsList.swift in Sources */,
+				7085A1B322B8DCB3009BD2BE /* CarDetailsViewModelFromCar.swift in Sources */,
+				70D4231022B7AABF0057D2EE /* AlamofireNetworkingAssembly.swift in Sources */,
+				7085A1CA22B969F8009BD2BE /* ModelAssembly.swift in Sources */,
+				70D4232922B7DD880057D2EE /* IteoCarsServiceEndpoints.swift in Sources */,
+				70D4232D22B7E3A40057D2EE /* CarSerializer.swift in Sources */,
+				70D422E622B63B5A0057D2EE /* CarsListTableViewController.swift in Sources */,
+				70D422DC22B637150057D2EE /* CodableCar.swift in Sources */,
+				70D4232022B7C2A80057D2EE /* AlamofireReachabilityStatusMapper.swift in Sources */,
+				70D4230E22B7AA850057D2EE /* AlamofireNetworking.swift in Sources */,
+				70D4231622B7BF980057D2EE /* Reachability.swift in Sources */,
+				70D422F022B6545A0057D2EE /* CarsListTableViewCell.swift in Sources */,
+				70D4231E22B7C2670057D2EE /* AlamofireReachability.swift in Sources */,
+				70D4233622B8BDB70057D2EE /* CarsListRouter.swift in Sources */,
+				7085A1CF22BA0B2C009BD2BE /* RealmAssembly.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -280,10 +717,13 @@
 		};
 		70D422D522B633490057D2EE /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E9B9CC8C72F89C15EC5EEA70 /* Pods-Cars.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Cars/Info.plist;
+				DEVELOPMENT_TEAM = 23M83L2VGD;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -297,10 +737,13 @@
 		};
 		70D422D622B633490057D2EE /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 86BB080D90A941E39676BB35 /* Pods-Cars.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = Cars/Info.plist;
+				DEVELOPMENT_TEAM = 23M83L2VGD;
+				INFOPLIST_FILE = "$(SRCROOT)/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
